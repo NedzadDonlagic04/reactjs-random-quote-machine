@@ -1,5 +1,6 @@
 .app {
 	min-height: 100vh;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -10,7 +11,68 @@
 
 #quote-box {
 	background-color: white;
+
 	width: 40%;
+	
 	border-radius: 5px;
-	padding: 2rem;
+	padding: 2rem 4rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.quote-text {
+	font-size: 20px;
+}
+
+#text, 
+#author {
+	font-size: 1em;
+}
+
+#author {
+	margin-top: .8em;
+	text-align: end;
+}
+
+#tweet-quote,
+#new-quote {
+	cursor: pointer;
+	color: white;
+
+	border: none;
+	border-radius: 5px;
+	
+	padding: .7rem;
+	font-size: 1rem;
+
+	background-color: rgb(200, 200, 200);
+	transition: all 1s ease;
+}
+
+#tweet-quote {
+	text-decoration: none;
+}
+
+.tweet-btn-container {
+	margin-top: .5rem;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media only screen and (max-width: 750px) {
+	#quote-box {
+		width: 70%;
+	}
+
+	.tweet-btn-container {
+		flex-direction: column;
+		gap: 1rem;
+	}
 }
