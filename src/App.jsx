@@ -29,8 +29,8 @@ function App() {
 	}, []);
 
 	return (
-		<div className="app" style={{backgroundColor: bgColor}}>
-			<QuoteBox author={quote.author} content={quote.content} onClick={generateQuote}/>
+		<div className="app" style={{backgroundColor: bgColor, color: bgColor}}>
+			<QuoteBox author={quote.author} content={quote.content} color={bgColor} onClick={generateQuote}/>
 		</div>
 	);
 }
