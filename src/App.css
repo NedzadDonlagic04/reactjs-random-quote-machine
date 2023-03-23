@@ -3,4 +3,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	background-color: rgb(200, 200, 200);
+	transition: all 1s ease;
+}
+
+#quote-box {
+	background-color: white;
+	width: 40%;
+	border-radius: 5px;
+	padding: 2rem;
 }
