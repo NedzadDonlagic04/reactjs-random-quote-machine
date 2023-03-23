@@ -6,8 +6,10 @@ function QuoteBox(props) {
 	return (
 		<div id="quote-box">
 			<QuoteText author={props.author} content={props.content} />
-			<TweetQuote />	
-			<QuoteButton onClick={() => props.onClick()} />
+			<div className='tweet-btn-container'>
+				<TweetQuote color={props.color} />	
+				<QuoteButton color={props.color} onClick={() => props.onClick()} />
+			</div>
 		</div>
 	);
 }
